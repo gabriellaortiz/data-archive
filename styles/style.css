@@ -23,6 +23,22 @@ p {
     text-rendering:optimizeLegibility !important;
 }
 
+.col a {
+	font-family: lores-12, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;	
+    text-decoration: none;
+}
+
+.col a:hover {
+	text-decoration: underline;
+}
+
 /*https://css-tricks.com/dont-overthink-flexbox-grids/
 */
 .flex-grid {
@@ -62,6 +78,6 @@ body {
   margin: 0 0 20px 0;
 }
 .col {
-  padding: 5px;
+  padding: 40px;
   color: white;
 }
