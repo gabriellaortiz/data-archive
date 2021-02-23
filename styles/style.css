@@ -1,0 +1,13 @@
+body {
+	background: black;
+}
+body p {
+	font-family: lores-12, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+}
