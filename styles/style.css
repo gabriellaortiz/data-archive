@@ -11,8 +11,49 @@ h1 {
 	color: white;
 	-webkit-font-smoothing: antialiased !important;
     text-rendering:optimizeLegibility !important;
+    text-decoration: none;
 }
-p {
+
+h1 a:hover {
+	font-family: lores-21-serif,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+/*	letter-spacing: 0.1em;
+*/	font-size: 40px;
+	text-transform: none;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+    text-decoration: underline;
+}
+
+h2 {
+	font-family: lores-21-serif,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+/*	letter-spacing: 0.1em;
+*/	font-size: 30px;
+	text-transform: none;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+    text-decoration: none;
+}
+
+h2 a:hover {
+	font-family: lores-21-serif,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+/*	letter-spacing: 0.1em;
+*/	font-size: 30px;
+	text-transform: none;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+    text-decoration: underline;
+}
+
+a.back  {
 	font-family: lores-12, sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -21,9 +62,10 @@ p {
 	color: white;
 	-webkit-font-smoothing: antialiased !important;
     text-rendering:optimizeLegibility !important;
+    text-decoration: none;
 }
 
-.col a {
+a.back:hover  {
 	font-family: lores-12, sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -31,18 +73,40 @@ p {
 	text-transform: uppercase;
 	color: white;
 	-webkit-font-smoothing: antialiased !important;
-    text-rendering:optimizeLegibility !important;	
+    text-rendering:optimizeLegibility !important;
+    text-decoration: underline;
+}
+
+a.affect_link, p.affect_list  {
+	font-family: lores-12, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+    text-decoration: none;
+}
+a.affect_link:hover {
+    text-decoration: underline;
+}
+
+p.search, p.description {
+	font-family: lores-12, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
     text-decoration: none;
 }
 
-.col a:hover {
-	text-decoration: underline;
-}
-
-/*https://css-tricks.com/dont-overthink-flexbox-grids/
-*/
 .flex-grid {
   display: flex;
+  align-items: center;
 }
 .flex-grid .col {
   flex: 1;
@@ -50,9 +114,12 @@ p {
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;
+
 }
 .flex-grid-thirds .col {
-  width: 32%;
+/*	  width: 32%;
+*/
+  width: 80%;
 }
 
 @media (max-width: 400px) {
@@ -78,6 +145,8 @@ body {
   margin: 0 0 20px 0;
 }
 .col {
-  padding: 40px;
+  padding: 30px;
   color: white;
+/*  border:solid;
+  border-width: 1px;*/
 }
