@@ -88,11 +88,8 @@ a.affect_link, p.affect_list  {
     text-rendering:optimizeLegibility !important;
     text-decoration: none;
 }
-a.affect_link:hover {
-    text-decoration: underline;
-}
 
-p.search, p.description {
+p.search, p.description, a.small_link, ol {
 	font-family: lores-12, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -102,6 +99,24 @@ p.search, p.description {
 	-webkit-font-smoothing: antialiased !important;
     text-rendering:optimizeLegibility !important;
     text-decoration: none;
+}
+
+a.small_link-center {
+	font-family: lores-12, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+	-webkit-font-smoothing: antialiased !important;
+    text-rendering:optimizeLegibility !important;
+    text-decoration: none;
+/*    make sure these links are centered!!!
+*/	text-align: center;
+}
+
+a.small_link:hover, a.small_link-center:hover, a.affect_link:hover {
+    text-decoration: underline;
 }
 
 .flex-grid {
