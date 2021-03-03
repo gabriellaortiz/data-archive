@@ -89,7 +89,7 @@ a.affect_link, p.affect_list  {
     text-decoration: none;
 }
 
-p.search, p.description, a.small_link, ol {
+p.search, p.description, p#searchHistory, a.small_link, ol {
 	font-family: lores-12, sans-serif;
 	font-weight: 400;
 	font-style: normal;

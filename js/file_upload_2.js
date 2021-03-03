@@ -2,6 +2,11 @@ var allData = [];
 var searches = [];
 var visits = [];
 
+var searchHistory = document.createElement('p');
+searchHistory.setAttribute("id", "searchHistory");
+var newParagraph = document.createElement('p');
+newParagraph.setAttribute("id", "ipParagraph");
+
 
 window.addEventListener('load', function() {
 var upload = document.getElementById('fileInput');
@@ -16,8 +21,8 @@ reader.addEventListener('load', function() {
 var result = JSON.parse(reader.result); // Parse the result into an object 
 
 
-  // if result has visited, visits.push(result)
-  // elseif result has searched for, visits.push(result)
+// if result has visited, visits.push(result)
+// elseif result has searched for, visits.push(result)
 
 // result.forEach(function (searches) {
 //   if (result.title.indexOf("Searched for") !== -1) {
@@ -32,12 +37,34 @@ var result = JSON.parse(reader.result); // Parse the result into an object
 // console.log(searches);
 // console.log(visits);
 
+// for(var i = 0; i < 10; i += 1) {
+// 	console.log(searches[i].title);
+// 	console.log(visits[i].title);
+// }
 
-for(var i = 0; i < result.length; i += 1) {
-  console.log(result[i].title);
+// // to parse through and log ALL searches
+// for(var i = 0; i < result.length; i += 1) {
+//   console.log(result[i].title);
+// }
+// for(var i = 0; i < result.length; i += 1) {
+//   console.log(result[i].title);
+// }
+
+var h1 = document.createElement('H1');
+h1.innerHTML = "Your data:";
+document.getElementById("loaded-searches").appendChild(h1); 
+
+searchHistory.setAttribute('style', 'white-space: pre;');
+
+for(var i = 55; i < 65; i += 1) {
+	// var single_search = result[i].title;
+	searchHistory.textContent += result[i].title + "\r\n";
+	console.log(result[i].title);
 }
-console.log(result.title);
+	document.getElementById("loaded-searches").appendChild(searchHistory); 
+// console.log(result.title);
 });
+
 reader.readAsText(upload.files[0]); // Read the uploaded file
 }
 });

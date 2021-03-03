@@ -4,7 +4,7 @@
 <head>
 	<link rel="stylesheet" href="../styles/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/bff4far.css">
-	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>SEARCHED FOR: "visceral feelings"</title>
 </head>
 	<div class="flex-grid-thirds">
@@ -76,7 +76,7 @@
 					<li><p class="description">Upload "MyActivity.json" file below. <input type="file" id="fileInput"> </p>
 				</ol>
 			</div>	
-			<div class="col">
+			<div class="col" id="loaded-searches">
 			</div>	
 			<div class="col"></div>				
 		</div>		
@@ -184,7 +184,7 @@
 	  </form>
 
 	  <!-- Submit the Form to Google Using "AJAX" -->
-	  <script data-cfasync="false" src="form-submission-handler.js"></script>
+	  <script data-cfasync="false" src="../js/form-submission-handler.js"></script>
 	<!-- END -->
 	</div>
 	<div class="flex-grid-thirds">
