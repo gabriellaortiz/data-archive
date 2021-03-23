@@ -56,7 +56,7 @@ document.getElementById("loaded-searches").appendChild(h1);
 
 searchHistory.setAttribute('style', 'white-space: pre;');
 
-for(var i = 55; i < 65; i += 1) {
+for(var i = 55; i < 105; i += 1) {
 	// var single_search = result[i].title;
 	searchHistory.textContent += result[i].title + "\r\n";
 	console.log(result[i].title);
