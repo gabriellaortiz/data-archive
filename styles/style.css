@@ -1,9 +1,17 @@
+    @font-face {
+    font-family: ocr;
+    src: url("https://static.wixstatic.com/ufonts/e1ce86_20bbdff372f8447a8db3b22fb441c515/woff2/file.woff2") format("woff2"),
+    url("https://static.wixstatic.com/ufonts/e1ce86_20bbdff372f8447a8db3b22fb441c515/woff/file.woff") format("woff"),
+    url("https://static.wixstatic.com/ufonts/e1ce86_20bbdff372f8447a8db3b22fb441c515/ttf/file.ttf") format("ttf");
+}
+
 body {
 	background: black;
 }
 h1 {
 	font-family: lores-21-serif,sans-serif;
-	font-weight: 700;
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 /*	letter-spacing: 0.1em;
 */	font-size: 40px;
@@ -16,7 +24,8 @@ h1 {
 
 h1 a:hover {
 	font-family: lores-21-serif,sans-serif;
-	font-weight: 700;
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 /*	letter-spacing: 0.1em;
 */	font-size: 40px;
@@ -29,7 +38,8 @@ h1 a:hover {
 
 h2 {
 	font-family: lores-21-serif,sans-serif;
-	font-weight: 700;
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 /*	letter-spacing: 0.1em;
 */	font-size: 30px;
@@ -42,7 +52,8 @@ h2 {
 
 h2 a:hover {
 	font-family: lores-21-serif,sans-serif;
-	font-weight: 700;
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 /*	letter-spacing: 0.1em;
 */	font-size: 30px;
@@ -55,7 +66,8 @@ h2 a:hover {
 
 a.back  {
 	font-family: lores-12, sans-serif;
-	font-weight: 700;
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -67,6 +79,7 @@ a.back  {
 
 a.back:hover  {
 	font-family: lores-12, sans-serif;
+	font-family: ocr,sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 20px;
@@ -78,8 +91,9 @@ a.back:hover  {
 }
 
 a.affect_link, p.affect_list  {
-	font-family: lores-12, sans-serif;
-	font-weight: 700;
+	font-family: lores-12, sans-serif;	
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 700;
 	font-style: normal;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -90,8 +104,9 @@ a.affect_link, p.affect_list  {
 }
 
 p.search, p.description, p#searchHistory, a.small_link, ol {
-	font-family: lores-12, sans-serif;
-	font-weight: 400;
+	font-family: lores-12, sans-serif;	
+/*	font-family: ocr,sans-serif;
+*/	font-weight: 400;
 	font-style: normal;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -102,7 +117,8 @@ p.search, p.description, p#searchHistory, a.small_link, ol {
 }
 
 a.small_link-center {
-	font-family: lores-12, sans-serif;
+/*	font-family: ocr,sans-serif;
+*/	font-family: lores-12, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 20px;
