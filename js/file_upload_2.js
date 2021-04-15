@@ -50,26 +50,100 @@ var result = JSON.parse(reader.result); // Parse the result into an object
 //   console.log(result[i].title);
 // }
 
-var h1 = document.createElement('H1');
-h1.innerHTML = "Your data:";
-document.getElementById("loaded-searches").appendChild(h1); 
+// adds title to section with searches displayed
+// var h1 = document.createElement('H1');
+// h1.innerHTML = "Your data:";
+// document.getElementById("loaded-searches").appendChild(h1); 
 
 searchHistory.setAttribute('style', 'white-space: pre;');
 
-for(var i = 55; i < 105; i += 1) {
-	// var single_search = result[i].title;
-	searchHistory.textContent += result[i].title + "\r\n";
-	console.log(result[i].title);
+// for(var i = 55; i < 105; i += 1) {
+// 	// var single_search = result[i].title;
+// 	searchHistory.textContent += result[i].title + "\r\n";
+// 	console.log(result[i].title);
+// }
+
+for(var i = 0; i < 10000; i += 1) {
+	if (result[i].title.includes('Searched')) {
+			searchHistory.textContent += result[i].title + "\r\n";
+			console.log(result[i].title);
+	}
 }
-	document.getElementById("loaded-searches").appendChild(searchHistory); 
+
+// document.getElementById("view-searches").element.style.visibility = 'visible'; 
+
+document.getElementById("view-searches").style.display = "block";
+
+
+//THIS WORKS
+		$(function(){
+			$('#clicker').click(function(){
+				var popUp = window.open('about:blank');
+	 
+	    // Catch any exceptions and log them to the console, for debugging purposes
+	    try 
+	    {
+	        // Make sure you have a body document when creating the new window....   
+	        popUp.document.write("YOUR SEARCHES:");
+	        popUp.document.body.appendChild(searchHistory);
+	    } catch (e) 
+	    {
+	        $('console').log(e);
+	    }
+	});
+	});
+
+
+
+
+
+	// THIS WORKS TO ADD SEARCHES TO MAIN PAGE
+	// document.getElementById("loaded-searches").appendChild(searchHistory); 
+
+ //    newWindow = window.open("about:blank");
+	// newWindow.onload.document.write("<!DOCTYPE html>\n<body></body>");
+	// var text = document.createTextNode('YOUR SEARCHES:');
+	// newWindow.document.body.appendChild(searchHistory);
+
+
+	// var myWindow = window.open("../html/searches.html", "newWindow", "width=500");
+	// var h1 = document.createElement('H1');
+	// h1.innerHTML = "Your data:";
+	// myWindow.getElementById("mainBody").appendChild(h1); 
+	// myWindow.getElementById("mainBody").appendChild(searchHistory);
+
+
+	// var url = '../html/searches.html';
+	// var myWindow = window.open(url, "", "width=800");
+	// myWindow.document.body.appendChild(searchHistory);
+
+ //    newWindow = window.open("about:blank");
+	// // var text = document.createTextNode('YOUR SEARCHES:');
+	// newWindow.document.body.appendChild(searchHistory);
+
+
+ //    newWindow = window.open("about:blank");
+ //    newWindow.document.write("<!DOCTYPE html>\n<body><div id='loaded-searches'></div></body>");
+	// var text = document.createTextNode('YOUR SEARCHES:');
+	// newWindow.document.getElementById("loaded-searches").appendChild(searchHistory); 
+
+
+
+	// var myWindow = window.open("", "MsgWindow", "width=200");
+	// myWindow.document.append(searchHistory);
+
+
+
 // console.log(result.title);
 });
+
 
 reader.readAsText(upload.files[0]); // Read the uploaded file
 }
 });
 }
 });
+
 
 
 
